@@ -5,9 +5,9 @@ import matchData from "../data/matchData"; // match data
 import { preparePlayerData, addWinsToPlayers } from '../helpers/playerHelpers'; // helper functions
 
 
-function PlayerList() {
-  const addWinsToPlayers = addWinsToPlayers(playerDataArray, matchData);
-  const preparePlayerData = preparePlayerData(playerData);
+function PlayerList(props) {
+  const playerDataArray = preparePlayerData(playerData);
+  const parsedPlayerData = addWinsToPlayers(playerDataArray, matchData);
 
   return (
     <section className="PlayerList">
