@@ -1,7 +1,5 @@
 import React from 'react'; // optional
-import Match from "./Match"; // plugging this in to PlayerList component
-// import matchData from "../data/matchData"; // match data
-
+import Match from "./Match";
 
 function MatchList(props) {
   // const oneMatch = matchData[0];
@@ -11,7 +9,6 @@ function MatchList(props) {
   return (
     <section className="PlayerList MatchList">
       <h1>Match list</h1>
-      {/* <Match {...oneMatch}/> */}
       {parsedMatches}
     </section>
   )
